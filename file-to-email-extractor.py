@@ -43,9 +43,7 @@ def cleanRawEmailList(rawEmailList):
 
 def export(emailList, filename):
         extension = os.path.splitext(filename)[1]
-        print(extension)
         exportingFilename = filename.split(extension)[0]
-        print(exportingFilename)
         exportingFilename = '{}.emails.txt'.format(exportingFilename)
         if os.path.isfile(exportingFilename) == True:
                 print(exportingFilename, ': file exist... nothing happen')
